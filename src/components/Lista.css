@@ -1,0 +1,5 @@
+.listaItem{
+    list-style: none;
+    text-align: center;
+    transform: translateX(-25px);
+}

@@ -1,0 +1,60 @@
+section{
+    border-radius: 5px;
+    background-color: #475b94;
+    width: 50vh;
+    height: auto;
+    border-top: 8px solid #bedbff;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    transition: .5s all;
+    cursor: pointer;
+    z-index: 0;
+
+    margin-bottom: 20px;
+}
+.legenda{
+    padding-bottom: 5px;
+}
+.section:hover{
+    scale: 1.05;
+    filter: none;
+    z-index: 9999;
+}
+.section:active{
+    transform: translateY(-2px);
+}
+.section:not(:hover) {
+    /* filter: blur(2px); */
+    z-index: 0;
+}
+.imagem{
+    max-width: 320px;
+    max-height: 320px;
+}
+.container-lista{
+    background-color: #7e98f3;
+    border-radius: 15px;
+    transition: .2s all;
+    height: 160px;
+}
+.container-lista{
+    animation-name: entrando-lista;
+    animation-duration: 0.8s;
+}
+
+.container-lista .fechado{
+    animation-name: entrando-lista;
+    animation-duration: 0.8s;
+}
+
+
+@keyframes entrando-lista{
+    from {height: 0px; opacity: 0;}
+    to { height: 160px; opacity: 1; display: block;}
+}
+@keyframes saindo-lista{
+    to {height: 0px; opacity: 0; display: none;}
+    from { height: 160px; opacity: 1;}
+}
+
+
